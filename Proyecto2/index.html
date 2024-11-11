@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="/Proyecto2/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/Proyecto2/images/Logo-VG_Tpt02.png" alt="Escudo" />
+        </div>
+
+        <div class="form-container">
+            <h1>BIENVENIDOS</h1>
+            <form>
+                <fieldset>
+                    <div class="option-container">
+                        <div class="option">
+                            <label>
+                                <input type="radio" name="opcion" value="Analisis de sistema" checked />
+                                Análisis de sistema
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="radio" name="opcion" value="Produccion Agraria" />
+                                Producción Agraria
+                            </label>
+                        </div>
+                    </div>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required />
+                    <input type="text" name="apellidos" placeholder="Apellidos" required />
+                    <input type="number" name="edad" placeholder="Edad" required />
+                    <input type="email" name="correo" placeholder="Correo" required />
+                    <input type="password" name="contrasena" placeholder="Contraseña" required />
+                    <a href="" class="forgot-password">¿Olvidó su contraseña?</a>
+                </fieldset>
+
+                <button type="submit">REGISTRARME</button>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <img src="/images/facebook.png" alt="" />
+                    </a>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">
+                        <img src="/images/google.png" alt="" />
+                    </a>
+                    <a href="https://github.com/">
+                        <img src="/images/github.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" name="terminos" required />
+                    <label>Aceptar la política de privacidad de los Términos y
+                        condiciones.</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

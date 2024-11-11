@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timeline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: white; 
+    text-align: center;
+  }
+  
+  .timeline-title {
+    font-size: 2.5em; 
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+  }
+  
+  .carousel {
+    position: relative;
+    width: 80vw; 
+    height: 80vh; 
+    overflow: hidden; 
+    margin: 0 auto; 
+  }
+  
+  .linea {
+    display: none; 
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .linea.active {
+    display: block;
+  }
+  
+  .linea__img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center;
+  }
+  
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2em;
+    z-index: 10; 
+  }
+  
+  .carousel__button--prev {
+    left: 10px;
+  }
+  
+  .carousel__button--next {
+    right: 10px;
+  }
+  
+  .cuadro-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cuadro {
+    width: 30px; 
+    height: 30px;
+    object-fit: cover;
+    margin: 0 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  }
+  
+  .cuadro.active {
+    border: 3px solid black; 
+    transform: scale(1.5); 
+  }
+  

@@ -1,0 +1,90 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.section {
+    padding: 40px;
+    margin: 40px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-content {
+    font-size: 18px;
+    color: #555;
+}
+
+.projects {
+    margin-bottom: 60px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+    flex: 1 1 50%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-name a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007BFF; /* Color azul para el enlace */
+    text-decoration: none;  /* Eliminar el subrayado por defecto */
+    transition: color 0.3s ease;
+}
+
+.project-name a:hover {
+    color: #0056b3;  /* Color más oscuro cuando se pasa el ratón */
+}
+
+.project-image-container {
+    flex: 1 1 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.contact {
+    margin-top: 60px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #555;
+}
